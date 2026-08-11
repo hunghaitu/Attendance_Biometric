@@ -17,7 +17,7 @@
         </h3>
     </div>
 
-    <hr style="border-top: 1px solid #e9ecef; my-4;">
+    <hr style="border-top: 1px solid #e9ecef; margin: 30px 0;">
 
     <!-- Key Features Section -->
     <div class="oe_row oe_spaced">
@@ -27,7 +27,7 @@
             </h3>
         </div>
 
-        <div class="row style="margin-top: 20px;">
+        <div class="row" style="margin-top: 20px;">
             <!-- Feature 1 -->
             <div class="col-md-6" style="margin-bottom: 20px;">
                 <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; height: 100%;">
@@ -59,7 +59,7 @@
                         <i class="fa fa-clock-o" style="margin-right: 8px;"></i> Smart Cron Automation
                     </h5>
                     <p style="color: #495057; font-size: 14px; line-height: 1.6;">
-                        Runs silently in the background via Odoo Cron scheduled <strong>every 60 minutes</strong>. It targets and refreshes data logs from the previous day to maintain absolute data accuracy.
+                        Runs silently in the background via Odoo Cron scheduled <strong>every 60 minutes</strong>. It automatically targets and refreshes data logs from the <strong>previous day</strong> to maintain absolute data accuracy.
                     </p>
                 </div>
             </div>
@@ -87,30 +87,96 @@
             <div class="col-xs-12 col-sm-3" style="padding: 10px;">
                 <div style="font-size: 24px; color: #7C7BAD; font-weight: bold;">1</div>
                 <h6 style="font-weight: 600; margin-top: 5px;">Trigger Sync</h6>
-                <p style="font-size: 12px; color: #6c757d;">Cron (Hourly) or Manual Date Wizard executes.</p>
+                <p style="font-size: 12px; color: #6c757d;">Cron (Hourly for yesterday's logs) or Manual Date Wizard executes.</p>
             </div>
             <div class="col-xs-12 col-sm-1" style="padding-top: 20px; color: #bcd;"><i class="fa fa-chevron-right fa-2x hidden-xs"></i></div>
             <div class="col-xs-12 col-sm-3" style="padding: 10px;">
                 <div style="font-size: 24px; color: #7C7BAD; font-weight: bold;">2</div>
                 <h6 style="font-weight: 600; margin-top: 5px;">Split Batches</h6>
-                <p style="font-size: 12px; color: #6c757d;">System chunks devices into multi-channel concurrent jobs.</p>
+                <p style="font-size: 12px; color: #6c757d;">System chunks devices into multi-channel concurrent queue jobs.</p>
             </div>
             <div class="col-xs-12 col-sm-1" style="padding-top: 20px; color: #bcd;"><i class="fa fa-chevron-right fa-2x hidden-xs"></i></div>
             <div class="col-xs-12 col-sm-3" style="padding: 10px;">
                 <div style="font-size: 24px; color: #7C7BAD; font-weight: bold;">3</div>
                 <h6 style="font-weight: 600; margin-top: 5px;">HR Attendance</h6>
-                <p style="font-size: 12px; color: #6c757d;">Raw data maps perfectly with Timezones into Odoo logs.</p>
+                <p style="font-size: 12px; color: #6c757d;">Raw data maps perfectly into Odoo Attendance logs with Auditing.</p>
             </div>
         </div>
     </div>
 
-    <!-- Logging & Maintenance -->
-    <div class="oe_row oe_spaced" style="margin-top: 40px;">
-        <div class="oe_span6">
-            <h4 style="color: #212529; font-weight: 600;">Advanced Auditing & Logs</h4>
-            <p style="color: #495057; font-size: 14px; line-height: 1.6;">
-                Never guess what went wrong. The module extends the native <code>ir.logging</code> model to provide crystal-clear metrics inside the Odoo UI. You can monitor the <strong>Total Records</strong>, <strong>Successful Records</strong>, and pinpoint <strong>Failed Records</strong> immediately filtered by hardware device.
+    <hr style="border-top: 1px solid #e9ecef; margin: 40px 0;">
+
+    <!-- Screenshots & Step-by-Step Guide Section -->
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 style="color: #212529; font-weight: 600; margin-bottom: 30px; border-left: 4px solid #7C7BAD; padding-left: 15px;">
+                Screenshots & User Guide
+            </h3>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="oe_span12" style="margin-bottom: 40px;">
+            <h4 style="color: #7C7BAD; font-weight: 600; font-size: 18px; margin-bottom: 10px;">
+                Step 1: Map Employee Biometric Device ID
+            </h4>
+            <p style="color: #495057; font-size: 14px; margin-bottom: 15px;">
+                Easily configure the unique Biometric ID assigned from the physical machine directly inside the employee's HR profile (<code>hr.employee</code>).
             </p>
+            <div class="text-center" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 10px; background-color: #fff;">
+                <img src="step1.png" alt="Employee Biometric ID Setup" style="max-width: 100%; height: auto; border-radius: 4px;">
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="oe_span12" style="margin-bottom: 40px;">
+            <h4 style="color: #7C7BAD; font-weight: 600; font-size: 18px; margin-bottom: 10px;">
+                Step 2: Biometric Device Configuration
+            </h4>
+            <p style="color: #495057; font-size: 14px; margin-bottom: 15px;">
+                Manage multiple attendance devices, monitor connection configurations, and trigger direct data pulls for selected time ranges.
+            </p>
+            <div class="text-center" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 10px; background-color: #fff;">
+                <img src="step2.png" alt="Biometric Device Form View" style="max-width: 100%; height: auto; border-radius: 4px;">
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="oe_span12" style="margin-bottom: 40px;">
+            <h4 style="color: #7C7BAD; font-weight: 600; font-size: 18px; margin-bottom: 10px;">
+                Step 3: Comprehensive Attendance Sync Logs
+            </h4>
+            <p style="color: #495057; font-size: 14px; margin-bottom: 15px;">
+                Track full transparency of background syncing. Monitor total pulled records, successful additions, and immediately catch failed records.
+            </p>
+            <div class="text-center" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 10px; background-color: #fff;">
+                <img src="step3.png" alt="Attendance Results Logs" style="max-width: 100%; height: auto; border-radius: 4px;">
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="oe_span12" style="margin-bottom: 40px;">
+            <h4 style="color: #7C7BAD; font-weight: 600; font-size: 18px; margin-bottom: 10px;">
+                Step 4: On-Demand Manual Recalculation Wizard
+            </h4>
+            <p style="color: #495057; font-size: 14px; margin-bottom: 15px;">
+                Need to re-sync missing historical logs? Use the dynamic wizard to define custom Start and End Dates to seamlessly pull device logs.
+            </p>
+            <div class="text-center" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 10px; background-color: #fff;">
+                <img src="step4.png" alt="Manual Pull Wizard" style="max-width: 100%; height: auto; border-radius: 4px;">
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="oe_span12" style="margin-bottom: 40px;">
+            <h4 style="color: #7C7BAD; font-weight: 600; font-size: 18px; margin-bottom: 10px;">
+                Step 5: Background Queue Job Generation
+            </h4>
+            <p style="color: #495057; font-size: 14px; margin-bottom: 15px;">
+                When triggering historical data pulls, Odoo pushes separate jobs into the Queue Job framework, enabling asynchronous multi-worker processing without blocking your main UI thread.
+            </p>
+            <div class="text-center" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 10px; background-color: #fff;">
+                <img src="step5.png" alt="Queue Jobs Management Backend" style="max-width: 100%; height: auto; border-radius: 4px;">
+            </div>
         </div>
     </div>
 

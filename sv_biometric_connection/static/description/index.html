@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biometric Device Attendance Integration via Queue Job</title>
+</head>
+<body>
+
+<section class="oe_container" style="font-family: 'Montserrat', 'Segoe UI', Roboto, sans-serif;">
+    <!-- Module Header -->
+    <div class="oe_row oe_spaced" style="text-align: center;">
+        <h2 class="oe_slogan" style="color: #7C7BAD; font-weight: 700; font-size: 36px; margin-top: 20px;">
+            Biometric Attendance Sync Manager (Queue Job Backend)
+        </h2>
+        <h3 class="oe_slogan" style="color: #6c757d; font-weight: 400; font-size: 18px;">
+            Seamlessly integrate Odoo HR Attendance with multiple ZKTeco, Ronald Jack, and Hikvision devices using optimized background queue workers.
+        </h3>
+    </div>
+
+    <hr style="border-top: 1px solid #e9ecef; my-4;">
+
+    <!-- Key Features Section -->
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 style="color: #212529; font-weight: 600; margin-bottom: 25px; border-left: 4px solid #7C7BAD; padding-left: 15px;">
+                Key Features & Highlights
+            </h3>
+        </div>
+
+        <div class="row style="margin-top: 20px;">
+            <!-- Feature 1 -->
+            <div class="col-md-6" style="margin-bottom: 20px;">
+                <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; height: 100%;">
+                    <h5 style="color: #7C7BAD; font-weight: 600;">
+                        <i class="fa fa-plug" style="margin-right: 8px;"></i> Multi-Brand Compatibility
+                    </h5>
+                    <p style="color: #495057; font-size: 14px; line-height: 1.6;">
+                        Supports a wide range of popular biometric devices using standard network protocols, including <strong>ZKTeco, Ronald Jack</strong>, and similar mainstream hardware.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-md-6" style="margin-bottom: 20px;">
+                <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; height: 100%;">
+                    <h5 style="color: #7C7BAD; font-weight: 600;">
+                        <i class="fa fa-tasks" style="margin-right: 8px;"></i> Queue Job Batch Processing
+                    </h5>
+                    <p style="color: #495057; font-size: 14px; line-height: 1.6;">
+                        Engineered for enterprise scale. Automatically breaks down enormous data pull requests into small, optimized batches using <strong>Queue Jobs</strong> to completely eliminate system timeout errors on multiple devices.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-md-6" style="margin-bottom: 20px;">
+                <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; height: 100%;">
+                    <h5 style="color: #7C7BAD; font-weight: 600;">
+                        <i class="fa fa-clock-o" style="margin-right: 8px;"></i> Smart Cron Automation
+                    </h5>
+                    <p style="color: #495057; font-size: 14px; line-height: 1.6;">
+                        Runs silently in the background via Odoo Cron scheduled <strong>every 60 minutes</strong>. It targets and refreshes data logs from the previous day to maintain absolute data accuracy.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="col-md-6" style="margin-bottom: 20px;">
+                <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; height: 100%;">
+                    <h5 style="color: #7C7BAD; font-weight: 600;">
+                        <i class="fa fa-calendar" style="margin-right: 8px;"></i> On-Demand Manual Pull Wizard
+                    </h5>
+                    <p style="color: #495057; font-size: 14px; line-height: 1.6;">
+                        Includes a robust dynamic wizard allowing HR managers to explicitly pick any custom <strong>Start Date</strong> and <strong>End Date</strong> range to recalculate or pull missing logs manually.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Architecture Workflow -->
+    <div class="oe_row oe_spaced" style="background-color: #f1f3f9; border-radius: 12px; padding: 30px; margin-top: 30px;">
+        <h4 style="color: #2c3e50; font-weight: 600; text-align: center; margin-bottom: 25px;">
+            How the Queue Job Sync Process Works
+        </h4>
+        <div class="row text-center" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div class="col-xs-12 col-sm-3" style="padding: 10px;">
+                <div style="font-size: 24px; color: #7C7BAD; font-weight: bold;">1</div>
+                <h6 style="font-weight: 600; margin-top: 5px;">Trigger Sync</h6>
+                <p style="font-size: 12px; color: #6c757d;">Cron (Hourly) or Manual Date Wizard executes.</p>
+            </div>
+            <div class="col-xs-12 col-sm-1" style="padding-top: 20px; color: #bcd;"><i class="fa fa-chevron-right fa-2x hidden-xs"></i></div>
+            <div class="col-xs-12 col-sm-3" style="padding: 10px;">
+                <div style="font-size: 24px; color: #7C7BAD; font-weight: bold;">2</div>
+                <h6 style="font-weight: 600; margin-top: 5px;">Split Batches</h6>
+                <p style="font-size: 12px; color: #6c757d;">System chunks devices into multi-channel concurrent jobs.</p>
+            </div>
+            <div class="col-xs-12 col-sm-1" style="padding-top: 20px; color: #bcd;"><i class="fa fa-chevron-right fa-2x hidden-xs"></i></div>
+            <div class="col-xs-12 col-sm-3" style="padding: 10px;">
+                <div style="font-size: 24px; color: #7C7BAD; font-weight: bold;">3</div>
+                <h6 style="font-weight: 600; margin-top: 5px;">HR Attendance</h6>
+                <p style="font-size: 12px; color: #6c757d;">Raw data maps perfectly with Timezones into Odoo logs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logging & Maintenance -->
+    <div class="oe_row oe_spaced" style="margin-top: 40px;">
+        <div class="oe_span6">
+            <h4 style="color: #212529; font-weight: 600;">Advanced Auditing & Logs</h4>
+            <p style="color: #495057; font-size: 14px; line-height: 1.6;">
+                Never guess what went wrong. The module extends the native <code>ir.logging</code> model to provide crystal-clear metrics inside the Odoo UI. You can monitor the <strong>Total Records</strong>, <strong>Successful Records</strong>, and pinpoint <strong>Failed Records</strong> immediately filtered by hardware device.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Disclaimer -->
+    <div class="oe_row oe_spaced" style="text-align: center; margin-top: 50px; padding: 20px 0; border-top: 1px solid #e9ecef;">
+        <p style="color: #acb5bd; font-size: 12px;">
+            Developed for Odoo Enterprise & Community Environments. Optimized for multi-worker environments.
+        </p>
+    </div>
+</section>
+
+</body>
+</html>

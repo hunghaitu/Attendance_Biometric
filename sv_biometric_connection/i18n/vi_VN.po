@@ -1,0 +1,784 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sv_biometric_connection
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20260504\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-20 08:05+0000\n"
+"PO-Revision-Date: 2026-05-20 08:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid ""
+"<strong>DNS Domain Connection:</strong>\n"
+"                            <br/>\n"
+"                            Use this when all devices are accessible through the same DNS domain.\n"
+"                            <br/>\n"
+"                            Example: company.ddns.net"
+msgstr ""
+"<strong>Kết nối DNS Domain:</strong>\n"
+"                            <br/>\n"
+"                            Sử dụng khi tất cả thiết bị có thể truy cập qua cùng một tên miền DNS.\n"
+"                            <br/>\n"
+"                            Ví dụ: company.ddns.net"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid ""
+"<strong>Direct IP Connection:</strong>\n"
+"                            <br/>\n"
+"                            Use this when you know the exact IP address of the device.\n"
+"                            <br/>\n"
+"                            Example: 192.168.1.100"
+msgstr ""
+"<strong>Kết nối IP trực tiếp:</strong>\n"
+"                            <br/>\n"
+"                            Sử dụng khi bạn biết chính xác địa chỉ IP của thiết bị.\n"
+"                            <br/>\n"
+"                            Ví dụ: 192.168.1.100"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid ""
+"<strong>Hostname + DNS Connection:</strong>\n"
+"                            <br/>\n"
+"                            Use this when each device has a unique hostname under the same domain.\n"
+"                            <br/>\n"
+"                            Example: device1.company.ddns.net\n"
+"                            <br/>\n"
+"                            (Hostname: device1, DNS Domain: company.ddns.net)"
+msgstr ""
+"<strong>Kết nối Hostname + DNS:</strong>\n"
+"                            <br/>\n"
+"                            Sử dụng khi mỗi thiết bị có tên host riêng biệt dưới cùng một tên miền.\n"
+"                            <br/>\n"
+"                            Ví dụ: device1.company.ddns.net\n"
+"                            <br/>\n"
+"                            (Hostname: device1, DNS Domain: company.ddns.net)"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid "Are you sure you want to restart the device?"
+msgstr "Bạn có chắc chắn muốn khởi động lại thiết bị không?"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model,name:sv_biometric_connection.model_zk_machine_attendance
+msgid "Attendance"
+msgstr "Chấm Công"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_zk_machine_attendance__attendance_type
+msgid "Attendance detecting methods"
+msgstr "Phương thức nhận diện chấm công"
+
+#. module: sv_biometric_connection
+#: model:ir.actions.act_window,name:sv_biometric_connection.biometric_device_details_action
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_ir_logging__device_id
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__device_id
+#: model:ir.ui.menu,name:sv_biometric_connection.biometric_device_details_menu
+#: model:ir.ui.menu,name:sv_biometric_connection.biometric_device_details_sub_menu
+msgid "Biometric Device"
+msgstr "Thiết Bị Sinh Trắc Học"
+
+#. module: sv_biometric_connection
+#: model:ir.model,name:sv_biometric_connection.model_biometric_device_details
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid "Biometric Device Details"
+msgstr "Chi Tiết Thiết Bị Sinh Trắc Học"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_hr_employee__device_id_num
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__device_id_num
+msgid "Biometric Device ID"
+msgstr "ID Thiết Bị Sinh Trắc Học"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_tree_view
+msgid "Biometric Devices"
+msgstr "Thiết Bị Sinh Trắc Học"
+
+#. module: sv_biometric_connection
+#. odoo-python
+#: code:addons/sv_biometric_connection/models/biometric_device_details.py:0
+msgid ""
+"Both DNS Domain and Device Hostname are required when using Hostname + DNS "
+"connection."
+msgstr ""
+"Cả DNS Domain và Device Hostname đều bắt buộc khi sử dụng kết nối Hostname +"
+" DNS."
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__punch_type__3
+msgid "Break In"
+msgstr "Vào Nghỉ"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__punch_type__2
+msgid "Break Out"
+msgstr "Ra Nghỉ"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_ir_logging__success_record
+msgid "Bản ghi thành công"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_ir_logging__failed_record
+msgid "Bản ghi thất bại"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__attendance_type__4
+msgid "Card"
+msgstr "Thẻ"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__attendance_type
+msgid "Category"
+msgstr "Danh Mục"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__punch_type__0
+msgid "Check In"
+msgstr "Vào Làm"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__punch_type__1
+msgid "Check Out"
+msgstr "Ra Về"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__company_id
+msgid "Company"
+msgstr "Công Ty"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid "Connection Examples"
+msgstr "Ví Dụ Kết Nối"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid "Connection Settings"
+msgstr "Cài Đặt Kết Nối"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__connection_type
+msgid "Connection Type"
+msgstr "Loại Kết Nối"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__create_uid
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_pull_all_attendance__create_uid
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__create_uid
+msgid "Created by"
+msgstr "Tạo bởi"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__create_date
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_pull_all_attendance__create_date
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__create_date
+msgid "Created on"
+msgstr "Tạo vào"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__company_id
+msgid "Current Company"
+msgstr "Công Ty Hiện Tại"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.ir_logging_search_view_inherit_sv_biometric
+msgid "Có Lỗi"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__dns_domain
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__biometric_device_details__connection_type__dns
+msgid "DNS Domain"
+msgstr "Tên Miền DNS"
+
+#. module: sv_biometric_connection
+#. odoo-python
+#: code:addons/sv_biometric_connection/models/biometric_device_details.py:0
+msgid "DNS Domain is required when using DNS connection."
+msgstr "Tên miền DNS là bắt buộc khi sử dụng kết nối DNS."
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__dns_domain
+msgid "DNS domain for multiple devices (e.g., company.ddns.net)"
+msgstr "Tên miền DNS cho nhiều thiết bị (ví dụ: company.ddns.net)"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.view_zk_machine_attendance_search
+msgid "Date"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.ir_logging_search_view_inherit_sv_biometric
+msgid "Device"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__device_hostname
+msgid "Device Hostname"
+msgstr "Tên Host Thiết Bị"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__device_ip
+msgid "Device IP"
+msgstr "IP Thiết Bị"
+
+#. module: sv_biometric_connection
+#. odoo-python
+#: code:addons/sv_biometric_connection/models/biometric_device_details.py:0
+msgid "Device IP is required when using Direct IP connection."
+msgstr "IP thiết bị là bắt buộc khi sử dụng kết nối IP trực tiếp."
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__device_password
+msgid "Device Password"
+msgstr "Mật Khẩu Thiết Bị"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__device_serial
+msgid "Device Serial/ID"
+msgstr "Số Seri/ID Thiết Bị"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__device_username
+msgid "Device Username"
+msgstr "Tên Đăng Nhập Thiết Bị"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__biometric_device_details__connection_type__ip
+msgid "Direct IP"
+msgstr "IP Trực Tiếp"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__display_name
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_pull_all_attendance__display_name
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__display_name
+msgid "Display Name"
+msgstr "Tên Hiển Thị"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_tree_view
+msgid "Download"
+msgstr "Tải Xuống"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid "Download Attendance"
+msgstr "Tải Dữ Liệu Chấm Công"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__attendance_type__255
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__punch_type__255
+msgid "Duplicate"
+msgstr "Trùng Lặp"
+
+#. module: sv_biometric_connection
+#: model:ir.model,name:sv_biometric_connection.model_hr_employee
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__employee_id
+msgid "Employee"
+msgstr "Nhân Viên"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__attendance_type__1
+msgid "Face"
+msgstr "Vân Tay"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__attendance_type__0
+msgid "Finger"
+msgstr "Vân Tay"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_hr_employee__device_id_num
+msgid "Give the biometric device id"
+msgstr "Nhập ID thiết bị sinh trắc học"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__biometric_device_details__connection_type__hostname
+msgid "Hostname + DNS"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__device_hostname
+msgid "Hostname of specific device (used with DNS domain)"
+msgstr "Tên host của thiết bị cụ thể (sử dụng với tên miền DNS)"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__id
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_pull_all_attendance__id
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__id
+msgid "ID"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__message_has_error
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.pull_all_attendance_form
+msgid "Kéo công"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.actions.act_window,name:sv_biometric_connection.action_pull_all_attendance
+#: model:ir.model,name:sv_biometric_connection.model_pull_all_attendance
+#: model:ir.ui.menu,name:sv_biometric_connection.menu_action_pull_all_attendance
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.pull_all_attendance_form
+msgid "Kéo lại công"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_ir_logging__pull_hand
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.ir_logging_search_view_inherit_sv_biometric
+msgid "Kéo thủ công"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__late_time_connect_fail
+msgid "Last Failed Connection Time"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__late_time_done
+msgid "Last Sync Time"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__write_uid
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_pull_all_attendance__write_uid
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__write_uid
+msgid "Last Updated by"
+msgstr "Cập Nhật Cuối Bởi"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__write_date
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_pull_all_attendance__write_date
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__write_date
+msgid "Last Updated on"
+msgstr "Cập Nhật Cuối Vào"
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.ir_logging_form_view_custom
+msgid "Log"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.actions.act_window,name:sv_biometric_connection.action_ir_logging_custom
+#: model:ir.ui.menu,name:sv_biometric_connection.menu_ir_logging_custom
+msgid "Log kéo lại công"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model,name:sv_biometric_connection.model_ir_logging
+msgid "Logging"
+msgstr "Ghi nhận"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__start_date
+msgid "Ngày bắt đầu"
+msgstr ""
+
+#. module: sv_biometric_connection
+#. odoo-python
+#: code:addons/sv_biometric_connection/models/biometric_device_details.py:0
+msgid "Ngày bắt đầu không thể lớn hơn ngày kết thúc."
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__start_date
+msgid "Ngày bắt đầu kéo lại công"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__end_date
+msgid "Ngày kết thúc"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__end_date
+msgid "Ngày kết thúc kéo lại công"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__responsible_user_id
+msgid "Người phụ trách"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__responsible_user_id
+msgid "Người sẽ nhận thông báo khi máy chấm công bị mất kết nối"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__punch_type__4
+msgid "Overtime In"
+msgstr "Vào Tăng Ca"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__punch_type__5
+msgid "Overtime Out"
+msgstr "Ra Tăng Ca"
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__attendance_type__3
+msgid "Password"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__device_password
+msgid "Password for device authentication"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__port_number
+msgid "Port Number"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__punching_time
+msgid "Punching Time"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__punch_type
+msgid "Punching Type"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_zk_machine_attendance__punching_time
+msgid "Punching time in the device"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_zk_machine_attendance__punch_type
+msgid "Punching type of the attendance"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__name
+msgid "Record Name"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid "Restart Device"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.actions.server,name:sv_biometric_connection.ir_cron_sync_attendance_today_ir_actions_server
+msgid "Sync ZK Attendance to HR Attendance"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.actions.server,name:sv_biometric_connection.ir_cron_sync_attendance__yesterday_today_ir_actions_server
+msgid "Sync ZK Attendance to HR Attendance Yesterday"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_tree_view
+msgid "Test"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.biometric_device_details_form_view
+msgid "Test Connection"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_zk_machine_attendance__device_id_num
+msgid "The ID of the Biometric Device"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__device_ip
+msgid "The IP address of the Device (leave empty if using DNS)"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__port_number
+msgid "The Port Number of the Device"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__late_time_done
+msgid "The time when the attendance was last synced"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__late_time_connect_fail
+msgid "The time when the last connection failed"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.pull_all_attendance_form
+msgid "Thoát"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields.selection,name:sv_biometric_connection.selection__zk_machine_attendance__attendance_type__2
+msgid "Type_2"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_ir_logging__total_record
+msgid "Tổng số bản ghi"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_pull_all_attendance__start_date
+msgid "Từ ngày"
+msgstr ""
+
+#. module: sv_biometric_connection
+#. odoo-python
+#: code:addons/sv_biometric_connection/models/biometric_device_details.py:0
+msgid ""
+"Unable to clear Attendance log.Are you sure attendance log is not empty."
+msgstr ""
+
+#. module: sv_biometric_connection
+#. odoo-python
+#: code:addons/sv_biometric_connection/models/biometric_device_details.py:0
+msgid ""
+"Unable to connect to Attendance Device. Please use Test Connection button to"
+" verify."
+msgstr ""
+
+#. module: sv_biometric_connection
+#. odoo-python
+#: code:addons/sv_biometric_connection/models/biometric_device_details.py:0
+msgid "Unable to connect to restart device"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__device_serial
+msgid "Unique identifier for this device"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__device_username
+msgid "Username for device authentication"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_biometric_device_details__address_id
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_zk_machine_attendance__address_id
+msgid "Working Address"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_zk_machine_attendance__address_id
+msgid "Working address of the employee"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,help:sv_biometric_connection.field_biometric_device_details__address_id
+msgid "Working address of the partner"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.actions.act_window,name:sv_biometric_connection.zk_machine_attendance_action
+#: model:ir.ui.menu,name:sv_biometric_connection.zk_machine_attendance_sub_menu
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.view_zk_machine_attendance_search
+#: model_terms:ir.ui.view,arch_db:sv_biometric_connection.zk_machine_attendance_tree_view
+msgid "ZK Machine Attendance"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.actions.server,name:sv_biometric_connection.ir_cron_queue_download_attendance_ir_actions_server
+msgid "[Queue Job] Download Attendance From All Devices"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.actions.server,name:sv_biometric_connection.ir_cron_queue_download_attendance_last_day_ir_actions_server
+msgid "[Queue Job] Download Attendance From All Devices Yesterday"
+msgstr ""
+
+#. module: sv_biometric_connection
+#: model:ir.model.fields,field_description:sv_biometric_connection.field_pull_all_attendance__end_date
+msgid "Đến ngày"
+msgstr ""

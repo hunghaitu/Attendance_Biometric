@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="biometric_device_details_form_view" model="ir.ui.view">
+        <field name="name">biometric.device.details.form</field>
+        <field name="model">biometric.device.details</field>
+        <field name="arch" type="xml">
+            <form string="Biometric Device Details">
+                <header>
+                    <button name="action_test_connection" type="object" string="Test Connection"
+                            class="oe_highlight" icon="fa-plug"/>
+                    <button name="download_and_sync_attendance_by_date" type="object" string="Download Attendance"
+                            class="oe_highlight" icon="fa-download"/>
+                    <button name="action_restart_device" type="object" string="Restart Device"
+                            icon="fa-power-off" confirm="Are you sure you want to restart the device?"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="connection_type"/>
+                            <field name="device_serial"/>
+                            <field name="port_number"/>
+                        </group>
+                        <group>
+                            <field name="company_id"/>
+                            <field name="address_id"/>
+                            <field name="responsible_user_id"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="late_time_done"/>
+                            <field name="late_time_connect_fail" readonly="1"/>
+                        </group>
+                    </group>
+
+                    <group string="Connection Settings">
+                        <group>
+                            <field name="dns_domain"/>
+                            <field name="device_hostname"/>
+                            <field name="device_ip"/>
+                        </group>
+                        <group>
+                            <field name="device_username"/>
+                            <field name="device_password" password="True"/>
+                        </group>
+                    </group>
+
+                    <group string="Connection Examples">
+                        <div class="alert alert-info" role="alert">
+                            <strong>Direct IP Connection:</strong>
+                            <br/>
+                            Use this when you know the exact IP address of the device.
+                            <br/>
+                            Example: 192.168.1.100
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            <strong>DNS Domain Connection:</strong>
+                            <br/>
+                            Use this when all devices are accessible through the same DNS domain.
+                            <br/>
+                            Example: company.ddns.net
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            <strong>Hostname + DNS Connection:</strong>
+                            <br/>
+                            Use this when each device has a unique hostname under the same domain.
+                            <br/>
+                            Example: device1.company.ddns.net
+                            <br/>
+                            (Hostname: device1, DNS Domain: company.ddns.net)
+                        </div>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="biometric_device_details_tree_view" model="ir.ui.view">
+        <field name="name">biometric.device.details.tree</field>
+        <field name="model">biometric.device.details</field>
+        <field name="arch" type="xml">
+            <list string="Biometric Devices">
+                <field name="name"/>
+                <field name="connection_type"/>
+                <field name="device_ip"/>
+                <field name="dns_domain"/>
+                <field name="device_hostname"/>
+                <field name="port_number"/>
+                <field name="device_serial"/>
+                <field name="address_id"/>
+                <field name="responsible_user_id"/>
+                            <field name="late_time_done"/>
+                            <field name="late_time_connect_fail" readonly="1"/>
+                <button name="action_test_connection" type="object" string="Test"
+                        icon="fa-plug" class="oe_highlight"/>
+                <button name="action_download_attendance" type="object" string="Download"
+                        icon="fa-download" class="oe_highlight"/>
+            </list>
+        </field>
+    </record>
+    <record id="biometric_device_details_action" model="ir.actions.act_window">
+        <field name="name">Biometric Device</field>
+        <field name="res_model">biometric.device.details</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

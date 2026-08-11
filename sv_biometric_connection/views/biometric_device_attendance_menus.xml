@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Defined all menus here -->
+    <menuitem id="biometric_device_details_menu"
+              name="Biometric Device"
+              parent="hr_attendance.menu_hr_attendance_root"
+              sequence="21"/>
+
+    <menuitem id="biometric_device_details_sub_menu"
+              action="biometric_device_details_action"
+              parent="biometric_device_details_menu"
+              sequence="21"/>
+
+    <menuitem id="zk_machine_attendance_sub_menu"
+              action="zk_machine_attendance_action"
+              parent="biometric_device_details_menu"
+              sequence="22"/>
+
+    <menuitem id="menu_action_pull_all_attendance"
+              name="Pull Attendance"
+              parent="biometric_device_details_menu"
+              action="action_pull_all_attendance"
+              sequence="24"/>
+
+    <menuitem id="menu_ir_logging_custom"
+              name="Attendance Sync Logs"
+              parent="biometric_device_details_menu"
+              action="action_ir_logging_custom"
+              sequence="30"/>
+</odoo>

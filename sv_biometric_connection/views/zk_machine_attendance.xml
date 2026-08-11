@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="zk_machine_attendance_tree_view" model="ir.ui.view">
+        <field name="name">zk_machine_attendance_tree_view</field>
+        <field name="model">zk.machine.attendance</field>
+        <field name="arch" type="xml">
+            <list string="ZK Machine Attendance" create="false" delete="false" edit="false">
+                <field name="employee_id"/>
+                <field name="device_id"/>
+                <field name="device_id_num"/>
+                <field name="punch_type"/>
+                <field name="attendance_type"/>
+                <field name="punching_time"/>
+                <field name="address_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_zk_machine_attendance_search" model="ir.ui.view">
+        <field name="name">zk.machine.attendance.search</field>
+        <field name="model">zk.machine.attendance</field>
+        <field name="arch" type="xml">
+            <search string="ZK Machine Attendance">
+                <field name="employee_id" />
+                <field name="device_id" />
+                <separator/>
+                <filter string="Date" name="punching_time_filter" date="punching_time"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="zk_machine_attendance_action" model="ir.actions.act_window">
+        <field name="name">ZK Machine Attendance</field>
+        <field name="res_model">zk.machine.attendance</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>

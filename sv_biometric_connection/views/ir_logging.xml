@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="ir_logging_list_view_custom">
+        <field name="model">ir.logging</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="create_date" />
+                <field name="device_id" />
+                <field name="success_record" />
+                <field name="failed_record" />
+                <field name="total_record" />
+            </list>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="ir_logging_form_view_custom">
+        <field name="model">ir.logging</field>
+        <field name="arch" type="xml">
+            <form string="Log">
+                <sheet>
+                    <group>
+                        <field name="create_date" />
+                        <field name="device_id" />
+                    </group>
+                    <group>
+                        <field name="success_record" />
+                        <field name="failed_record" />
+                        <field name="total_record" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ir_logging_search_view_inherit_sv_biometric" model="ir.ui.view">
+        <field name="name">ir.logging.search.inherit.sv_biometric</field>
+        <field name="model">ir.logging</field>
+        <field name="inherit_id" ref="base.ir_logging_search_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='group_by_month']" position="after">
+                <filter string="Device" name="group_by_device" domain="[]" context="{'group_by': 'device_id'}"/>
+                <filter string="Manual Pull" name="filter_pull_hand" domain="[('pull_hand', '=', True)]"/>
+                <filter string="Has Errors" name="filter_failed_records" domain="[('failed_record', '>', 0)]"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_ir_logging_custom" model="ir.actions.act_window">
+        <field name="name">Attendance Sync Logs</field>
+        <field name="res_model">ir.logging</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_filter_failed_records': 1}</field>
+        <field name="domain">[('pull_hand', '=', True)]</field>
+        <field name="search_view_id" ref="ir_logging_search_view_inherit_sv_biometric"/>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('ir_logging_list_view_custom')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('ir_logging_form_view_custom')}) ]"/>
+    </record>
+</odoo>

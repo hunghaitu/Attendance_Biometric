@@ -1,0 +1,28 @@
+[options]
+addons_path = /home/quang/vdx/odoo_com/odoo/addons,
+    /home/quang/vdx/odoo_com/odoo/odoo/addons,
+    /home/quang/vdx/Attendance_Biometric
+admin_passwd = 1
+db_host = localhost
+db_maxconn = 64
+db_password = 1
+db_port = 5432
+db_sslmode = prefer
+db_template = template0
+db_user = quang
+bin_path = /usr/bin	
+pg_path = /usr/lib/postgresql/16/bin
+;data_dir = /var/lib/odoo/data
+;db_name = False
+data_dir = /mnt/70868676-8200-43ba-926d-239e59229c4f/odoo_filestore
+osutil_tmpdir = /mnt/70868676-8200-43ba-926d-239e59229c4f/odoo_tmp
+limit_time_cpu = 86400
+limit_time_real = 86400
+
+workers = 8
+server_wide_modules = base,web,queue_job
+max_cron_threads = 4
+db_name = odoo18bio
+[queue_job]
+channels = root:10
+

@@ -9,8 +9,8 @@ from functools import wraps
 from collections import defaultdict
 from dateutil.relativedelta import relativedelta
 from psycopg2.extras import execute_values
-
-from odoo import api, fields, models, _, registry, SUPERUSER_ID
+from odoo.modules.registry import Registry
+from odoo import api, fields, models, _, SUPERUSER_ID
 from odoo.exceptions import UserError, ValidationError
 from odoo.fields import Datetime
 
@@ -23,7 +23,7 @@ except ImportError:
 
 def log_exception_to_ir_logging(env, message, func_name="unknown", path=__name__, device_id=False, err_name='biometric_error', pull_hand=False, success_record=0, failed_record=0):
     dbname = env.cr.dbname
-    with registry(dbname).cursor() as cr:
+    with Registry(dbname).cursor() as cr:
         new_env = api.Environment(cr, env.uid, env.context)
         new_env['ir.logging'].sudo().create({
             'name': err_name,

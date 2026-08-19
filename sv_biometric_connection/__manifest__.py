@@ -38,6 +38,7 @@
     "assets": {
         "web.assets_backend": [],
     },
+    'live_test_url': 'https://www.youtube.com/watch?v=SN_DwPqcj5Y',
     "installable": True,
     "auto_install": False,
     "application": False,

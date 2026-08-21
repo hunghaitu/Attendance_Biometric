@@ -21,8 +21,8 @@ Keywords: odoo biometric attendance, zkteco odoo, ronald jack odoo, hr attendanc
     """,
     "author": "Quang",
     "website": "https://www.facebook.com/quang.nguyenhuy.2005",
-    "price": 60.00,
-    "currency": "USD",
+    "price": 39.00,
+    "currency": "EUR",
     "license": "OPL-1",
     "depends": [
         "base",
